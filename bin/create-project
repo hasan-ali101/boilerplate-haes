@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+import { input, confirm } from "@inquirer/prompts";
+
+import { cli } from "../src/cli.js";
+
+const projectName = await input({
+  message: "Enter your name",
+  default: "my-project",
+});
+const database = await confirm({
+  message: "Include a Sqlite database?",
+  default: true,
+});
+const animations = await confirm({
+  message: "Include motion for animations?",
+  default: true,
+});
+
+cli({
+  projectName,
+  database,
+  animations,
+});
