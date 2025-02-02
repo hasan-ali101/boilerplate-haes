@@ -9,6 +9,10 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Allow pushing to the repository
+      issues: write # Optional
+      pull-requests: write # Optional
 
     strategy:
       matrix:
