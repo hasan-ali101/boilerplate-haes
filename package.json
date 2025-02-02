@@ -1,6 +1,6 @@
 {
   "name": "@haes/create-app",
-  "version": "1.0.2",
+  "version": "0.0.0-development",
   "main": "src/index.js",
   "type": "module",
   "bin": {
@@ -21,5 +21,8 @@
     "@inquirer/prompts": "^7.2.3",
     "esm": "^3.2.25",
     "fs-extra": "^11.3.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^24.2.1"
   }
 }

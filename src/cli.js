@@ -22,4 +22,6 @@ export async function cli(args) {
   fs.mkdirSync(destinationPath);
 
   await fs.copy(scaffoldingPath, destinationPath);
+
+  // could also open the file in the code editorß
 }
